@@ -1,38 +1,399 @@
-.App {
+.login-cont-outer {
+  background: linear-gradient(to right, #591C68, #77248B);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  min-height: 100vh;
+  /* padding: 2rem; */
+}
+
+*{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.login-cont-inner{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6vw;
+}
+
+.logo1{
+  width: 40.875vw;
+  height: 41.36vh;
+  min-width: 25rem;
+
+}
+
+
+.login-i2-p1{
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.login-i2-p2{
+  color: #76248bd0;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.login-i2-p{
+  margin-top: -3rem;
+  margin-left: -3rem;
+}
+
+
+.login-i2{
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 1rem;
+  width: 23vw;
+  /* width: 37.3vw;
+  height: 78.6vh; */
+  padding: 2rem;
+  border-radius: 3px;
+  min-width: 20rem;
+  min-height: 35rem;
+  margin-bottom: 1rem;
+}
+
+.google, .fb {
+  width: 19.5rem;
+  cursor: pointer;
+}
+
+.or-border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.or-border p{
+  font-weight: 400;
+  color: rgb(103, 103, 103);
+}
+
+.or-border-1{
+  width: 8vw;
+  border-top: 2px solid rgba(0, 0, 0, 0.255);
+}
+
+.input-cont {
+  position: relative;
+  width: 300px; 
+
+}
+
+.input-logo1 {
+  position: absolute;
+  top: 50%;
+  left: 10px; 
+  transform: translateY(-50%);
+  height: 20px; 
+}
+
+.input{
+  padding-left: 30px;
+  width: 100%;
+  box-sizing: border-box; 
   text-align: center;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-btn{
+  width: 10vw;
+  height: 5.6vh;
+  background-color: #76248bbb;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+/* -----------------------------------------------dashboard--------------------------------------- */
+
+
+
+.root{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vh 4vw 3vh 4vw;
+}
+
+.side-p{
+  color: 
+  rgba(119, 36, 139, 0.71);
+  font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  font-size: 2rem;
+}
+
+.side-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  top: -2rem;
+  /* margin-left: 2.5vw; */
+}
+
+.side-img{
+  width: 9.5vw;
+  cursor: pointer;
+}
+
+.side-img-3{
+  width: 7.5vw;
+  margin-top: -1vh;
+}
+
+@media(max-width:1000px){
+  .side-img{
+    width: 8rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* ---------------------------------dashboard------------------------------- */
+
+
+
+
+/* .dash-outer{
   display: flex;
   flex-direction: column;
+  gap: 2vh;
+} */
+
+
+.search-input{
+  padding-left: 30px;
+  width: 30vw;
+  box-sizing: border-box; 
+  /* text-align: center; */
+  padding-left: 40px;
+  padding: 0.5rem 0.5rem 0.5rem 40px;
+  border-radius: 8px;
+  min-width: 25rem;
+}
+
+.dash-pic-1{
+  width: 5rem;
+  cursor: pointer;
+}
+
+.dash-i1{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.dash-i2{
+  display: flex;
+  column-gap: 10vw;
+  flex-wrap: wrap;
+  margin-bottom: 6vh;
+}
+
+.dash-i3-inner{
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.181);
+  
+}
+
+.data-outer{
+  overflow-y: scroll;
+  max-height: 45vh;
+
+}
+
+.data-outer::-webkit-scrollbar {
+  display: none; 
+}
+ 
+
+.data-outer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 65vw;
+}
+
+.dash-i3-inner-2{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(160, 91, 176, 0.71);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.data{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.364);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data p{
+  
+  font-weight: 400;
+}
+
+.del-img{
+  width: 1.7vw;
+  height: 1.7vw;
+  margin-left: 3rem;
+  margin-right: -4rem;
+  cursor: pointer;
+}
+
+.eta{
+  display: flex;
+  /* gap: 3rem; */
+  align-items: center;
+}
+
+.pink{
+  color: 
+  rgba(119, 36, 139, 0.71)
+}
+.pink2{
+  font-weight: 400;
+}
+
+.menu-p{
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.dash-i2-input{
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.321);
+  font-weight: 400;
+}
+
+.dash-i2-input:focus{
+  outline: none;
+}
+
+
+
+
+/* ----------------------------------root2------------------------------- */
+
+
+
+.root2{
+  display: flex;
+  gap: 10vw;
+  padding: 2vh 3vw 2vh 3vw;
+  align-items: flex-start;
+}
+
+.root2-inner{
+  display: flex;
+  align-items: flex-start;
+  width: 80vw;
+  justify-content: space-between;
+  /* padding: 0.5rem; */
+}
+
+.dash-pic-2{
+  /* margin: 1rem; */
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.add-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+  padding: 2rem 4rem 2rem 4rem;
+  gap: 5rem;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+.add-inner-2{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: -1rem;
+}
+
+.add-inner-2-1, .add-inner-2-2, .add-inner-2-3{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: -1rem;
+}
+
+.add-category{
+  width: 20vw;
+  border-radius: 7px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 0.8rem;
+  min-width: 18rem;
+}
+
+.add-item{
+  border-radius: 7px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.add-save{
+  width: 10vw;
+  min-width: 8rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border-radius: 10px;
+  background-color: rgba(119, 36, 139, 0.71);
+  color: white;
+  border: none;
+  margin-top: -2rem;
+}
+
+.add-menu-p{
+  font-size: 1.9rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  color: rgba(119, 36, 139, 0.71);
+}
+
+.menu-p{
+  font-size: 1.5rem;
+  color: rgba(119, 36, 139, 0.71);
+}
+
+.add-i1{
+  display: flex;
+  
+}
+
+.add-outer{
+  /* display: flex;
+  flex-direction: column; */
 }
