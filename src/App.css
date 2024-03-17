@@ -251,6 +251,7 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid rgba(0, 0, 0, 0.364);
+  /* min-width: 60rem; */
 }
 
 .data p{
@@ -259,8 +260,8 @@
 }
 
 .del-img{
-  width: 1.7vw;
-  height: 1.7vw;
+  width: 1.7rem;
+  height: 1.7rem;
   margin-left: 3rem;
   margin-right: -4rem;
   cursor: pointer;
