@@ -8,6 +8,12 @@
   /* padding: 2rem; */
 }
 
+@media(max-width:390px){
+  .login-cont-outer{
+    width: 25rem;
+  }
+}
+
 *{
 
     font-family: "Poppins", sans-serif;
@@ -124,6 +130,8 @@
   cursor: pointer;
   min-width: 8rem;
 }
+
+
 
 
 
