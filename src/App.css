@@ -237,7 +237,8 @@
 .data-outer {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  width: 65vw;
+  /* width: 65vw; */
+  /* min-width: ; */
 }
 
 .dash-i3-inner-2{
