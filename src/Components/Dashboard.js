@@ -4,18 +4,20 @@ import del from "./../Assets/Delete.png";
 import URL from "./../rootUrl";
 import Cookies from "universal-cookie";
 import search from "./../Assets/search-normal.png";
+import { Link } from "react-router-dom";
 
 export default function Dashboard(props) {
   let cookes = new Cookies();
   let token = cookes.get("token");
   // console.log(token)
 
+
   const [searchQuery, setSearchQuery] = useState("");
   const [searchQuery2, setSearchQuery2] = useState("");
   const [searchQuery3, setSearchQuery3] = useState("");
   const [searchQuery4, setSearchQuery4] = useState("");
   const [data, setData] = useState(null);
-  const stringWithoutQuotes = token && token.replace(/"/g, "");
+  const stringWithoutQuotes = token ? token.replace(/"/g, "") : window.location.replace("/");
 
   useEffect(() => {
 
@@ -27,7 +29,7 @@ export default function Dashboard(props) {
             Authorization: `Bearer ${stringWithoutQuotes}`,
           },
         });
-
+        
         if (response.ok) {
           const result = await response.json();
           setData(result);
@@ -38,12 +40,10 @@ export default function Dashboard(props) {
     };
     fetchData();
   }, [props.data, token]);
+  
+  if (!data) return <h2>No data or you are not signed in<br></br>click <Link to="https://pavan-assessment-frontend.onrender.com/">Login</Link> to login</h2>;
 
-  if (!data) return <h2>No data</h2>;
-
-  // console.log(data?.items[0]?.category)
-
-
+  
   const filteredData = data?.items?.filter((el) => {
     if (searchQuery2) {
       return el.category.toLowerCase().includes(searchQuery2.toLowerCase());

@@ -11,7 +11,7 @@ export default function Sidebar(props) {
             <div className="side-inner">
                 <p className="side-p">RestroDineTech</p>
 
-                <Link to="/dashboard"><img className="side-img" src={list1}/></Link> 
+                <Link to="/dashboard2"><img className="side-img" src={list1}/></Link> 
                 <Link to="/addItem"><img className="side-img" src={list2}/></Link>
                 <img className="side-img side-img-3" src={list3}/>
                 <img className="side-img" src={list4}/>

@@ -10,6 +10,9 @@ export default function AddItem(props) {
     let cookes = new Cookies();
     let token = cookes.get("token");
 
+    if(!token)
+    window.location = "/"
+
     const stringWithoutQuotes = token && token.replace(/"/g, "");
 
     const [formData, setFormData] = useState({
@@ -42,6 +45,7 @@ export default function AddItem(props) {
         })
         .then(data => {
             console.log('Success:', data);
+            alert("Data posted")
         })
         .catch(error => {
             console.error('Error:', error);
