@@ -47,7 +47,7 @@ export default function Login(props) {
           // }
 
           if(response.ok){
-            window.location = "/dashboard"
+            window.location = "/dashboard2"
           }
           
           const result = await response.json();
