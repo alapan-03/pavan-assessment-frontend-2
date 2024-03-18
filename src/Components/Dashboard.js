@@ -17,7 +17,8 @@ export default function Dashboard(props) {
   const [searchQuery3, setSearchQuery3] = useState("");
   const [searchQuery4, setSearchQuery4] = useState("");
   const [data, setData] = useState(null);
-  const stringWithoutQuotes = token ? token.replace(/"/g, "") : window.location.replace("/");
+  // const stringWithoutQuotes = token ? token.replace(/"/g, "") : window.location.replace("/");
+  const stringWithoutQuotes = token && token.replace(/"/g, "") ;
 
   useEffect(() => {
 

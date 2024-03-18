@@ -136,7 +136,7 @@
 
 
 
-/* -----------------------------------------------dashboard--------------------------------------- */
+/* -----------------------------------------------sidebar--------------------------------------- */
 
 
 
@@ -174,7 +174,7 @@
 }
 
 .side-img-3{
-  width: 7.5vw;
+  width: 6.5rem!important;
   margin-top: -1vh;
 }
 
@@ -184,6 +184,41 @@
   }
 }
 
+.side-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.side-items{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 1.5rem;
+  font-family: 'Poetsen One';
+}
+
+.side-items p{
+color: 
+rgba(119, 36, 139, 0.71);
+font-size: 16px;
+}
+
+.side-items img{
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 25%;
+}
+
+.indicator{
+  position: absolute;
+  /* left: -5.5rem; */
+}
+
+.side-img1{
+  /* padding: 1rem 1rem 0rem 1rem; */
+}
 
 
 /* ---------------------------------dashboard------------------------------- */
